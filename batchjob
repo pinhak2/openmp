@@ -10,14 +10,14 @@
 
 ################ Change these parameters according to your requisites
 # nodes
-#SBATCH -N 2
+#SBATCH -N 8
 
 # tasks (threads)
-#SBATCH -n 10
+#SBATCH -n 16
 
 # time 
 #SBATCH -t 30
-# time formats =  "minutes", "minutes:seconds", "hours:minutes:seconds", "days-hours", "days-hours:minutes" and "days-hours:minutes:seconds"
+# time formats =  "minutes", "minutes:seconds", "hours:minutes:seconds", "days-hour", "days-hours:minutes" and "days-hours:minutes:seconds"
 
 # Exclusive (alloc all threads from each node) or shared (alloc only threads set by "-n" parameter)
 #SBATCH --exclusive
@@ -58,7 +58,7 @@
 
 ################ Please, change this directory to your working dir.
 
-#SBATCH -D /home/user/example
+#SBATCH -D /home/pp03028/openmp
 
 ################
 
