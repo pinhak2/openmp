@@ -30,7 +30,7 @@ void BubbleSort(int n, int * vetor) {
 int main() {
   int i, j, array_size;
   double tempo;
-
+//ATENCAO!!! NAO BOTAR PARALELISMO NO ARRAY DE FORA!!!
   for (array_size = INI_ARRAY_SIZE; array_size <= MAX_ARRAY_SIZE; array_size += INC_ARRAY_SIZE) {
 
       // INICIALIZA OS ARRAYS A SEREM ORDENADOS
